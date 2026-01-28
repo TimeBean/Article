@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"]</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@@tailwindcss/browser@4"></script>
+</head>
+
+@*<body class="bg-orange-50">
+<div class="text-yellow-950 bg-orange-100 border-2 rounded-sm mt-5 mb-5 sm:w-250 sm:mx-auto shadow-lg shadow-stone-600">*@
+
+<body class="bg-gray-50 text-gray-800">
+<div class="bg-white border-2 rounded-2xl mt-5 mb-5 sm:w-200 sm:mx-auto shadow-lg shadow-stone-600">
+
+    @functions
+    {
+        readonly string _userName = "TimeBean";
+        readonly string _userAvatar = "tux.png";
+    }
+
+    <header class="border-b-2 pt-0 pb-2 pl-0 mt-0 text-gray-200">
+        <div class="mb-2"></div>
+        <div class="flex items-center h-16">
+            <a href="/Index" class="ml-10 text-4xl text-gray-800 leading-none">Read<span class="font-bold text-blue-500">Key</span></a>
+
+            <div class="ml-auto flex items-center">
+                <a class="mr-10 h-lh text-sm leading-none text-gray-800">
+                    @@_userName
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+</div>
+
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
