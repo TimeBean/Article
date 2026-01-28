@@ -1,0 +1,9 @@
+﻿services:
+  article.web:
+    image: article.web
+    build:
+      context: .
+      dockerfile: Article.Web/Dockerfile
+    ports:
+        - "8080:8080"
+
