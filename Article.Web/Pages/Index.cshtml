@@ -1,0 +1,19 @@
+﻿@page
+@using NLipsum.Core
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="sm:m-10 sm:mt-2 sm:text-justify">
+
+    <p class="sm:mb-2 text-4xl font-bold">List of pages</p> <br>
+    
+    <div>
+    <a href="" class="ml-5 text-blue-600">Index page</a> <br>
+    <a class="ml-5 text-blue-500" asp-page="/Work">Author article</a> <br>
+    <a class="ml-5 text-blue-500" asp-page="/Error">Error</a> <br>
+    <a class="ml-5 text-blue-500" asp-page="/Privacy">Privacy</a> <br>
+</div>
+
+</div>
