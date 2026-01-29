@@ -124,3 +124,8 @@ TestResults/
 .idea/*/tasks.xml
 .idea/dictionaries
 .idea/shelf
+
+# =========================
+# Tailwindcss standalone 
+# =========================
+Article.Web/tailwindcss
