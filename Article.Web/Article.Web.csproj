@@ -25,4 +25,8 @@
       </Content>
     </ItemGroup>
 
+    <Target Name="Tailwind" BeforeTargets="Build">
+        <Exec Command="$(ProjectDir)tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/tailwind.css --minify" />
+    </Target>
+
 </Project>

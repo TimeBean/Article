@@ -38,8 +38,8 @@
         }
     </p>
 
-    <article class="prose max-w-none sm:mt-4 sm:mb-2 @(Model.IsOpen ? "" : "mask-b-from-75%")">
-        <div class="markdown-content">
+    <article class="sm:mt-4 sm:mb-2 @(Model.IsOpen ? "" : "mask-b-from-65%")">
+        <div class="prose my-article">
             @Html.Raw(Model.GetText())
         </div>
     </article>
