@@ -129,3 +129,5 @@ TestResults/
 # Tailwindcss standalone 
 # =========================
 Article.Web/tailwindcss
+Article.Web/plugins
+
