@@ -38,9 +38,7 @@
         }
     </p>
 
-    <article class="sm:mt-4 sm:mb-2 @(Model.IsOpen ? "" : "mask-b-from-65%")">
-        <div class="prose my-article">
+    <article class="prose lg:prose-xl sm:mt-4 sm:mb-2 @(Model.IsOpen ? "" : "mask-b-from-65%")">
             @Html.Raw(Model.GetText())
-        </div>
     </article>
 </div>

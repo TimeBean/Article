@@ -21,7 +21,7 @@ public class Work : PageModel
     {
         const string markdownText = "# Заголовок\n" +
                                     "some text\n" +
-                                    "- первый __пункт__\n" +
+                                    "- **первый** *пункт*\n" +
                                     "- второй пункт\n";
             
         var text = Dedent(markdownText);
